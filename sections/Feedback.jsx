@@ -43,12 +43,17 @@ const Feedback = () => (
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10px] top-[3%]"
         >
-          <img
-            src="/stamp.png"
-            alt="stamp"
-            className="w-[155px] h-[155px] object-contain"
-          />
-
+        {/* scroll button */}
+        <a href="#explore">
+          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
+            <img
+              src="/stamp.png"
+              alt="stamp"
+              className="w-[155px] h-[155px] object-contain"
+            />
+          </div>
+        </a>
+        {/*end scroll button */}
         </motion.div>
       </motion.div>
 
